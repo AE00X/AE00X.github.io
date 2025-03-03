@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anees Aleideh - portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <div class="container header-container">
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#My_projects">My projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home">
+    <div class="container">
+      <h2>Welcome to My portfolio</h2>
+      <br>
+      <p>I am a Cyber Security Student &amp; Web Developer  👨‍💻</p>
+      <br><br>
+      <a href="#contact" class="btn">Contact Me</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <img src="Anees.png" alt="My photo">
+      <br><br><br><br>
+      <p>
+        Hello! I'm <strong>Anees</strong>, a Reverse Engineering professional and Cybersecurity student.
+        <br><br>
+      </p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container">
+      <h2>My Skills</h2>
+      <br>
+      <div class="skills-grid">
+        <div class="skill">Cyber Security</div>
+        <div class="skill">HTML &amp; CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">Python</div>
+        <div class="skill">C++</div>
+        <div class="skill">C</div>
+      </div>
+      <div class="skills-grid">
+        <div class="skill">Reverse Engineering</div>
+        <div class="skill">Cryptography</div>
+        <div class="skill">Stegnography</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="My_projects">
+    <div class="container">
+      <h2>My projects</h2>
+      <br>
+      <div class="My_projects-item">
+        <h3 class="project-title">Modifyte Tool</h3>
+        <div class="project-description">
+          <p><strong>Modifyte</strong> is a powerful file analysis tool designed to extract, modify, and analyze text within files efficiently. Modifyte allows users to view file contents clearly, extract meaningful text, edit content, and analyze various file properties such as character count. It provides a professional approach to file analysis, making it a valuable tool for developers, security researchers, and data analysts.</p>
+		  <br>
+		  <img src="Modifyte.png" alt="Your Photo">
+		</div>
+      </div>
+      
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form action="mailto:ahaleideh22@cit.just.edu.jo" method="post">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Anees Aleideh All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.project-title').forEach(title => {
+      title.addEventListener('click', function() {
+        const desc = this.nextElementSibling;
+        if (desc.style.display === "block") {
+          desc.style.display = "none";
+        } else {
+          desc.style.display = "block";
+        }
+      });
+    });
+  </script>
+</body>
+</html>
